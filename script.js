@@ -1,5 +1,5 @@
 function fetchData() {
-    fetch("http://api.themoviedb.org/3/movie/popular?api_key=6b14c4c8bcc5ae16e8216d9385a1b3a9")
+    fetch("https://api.themoviedb.org/3/movie/popular?api_key=6b14c4c8bcc5ae16e8216d9385a1b3a9")
         .then(response => {
             if (!response.ok) {
                 throw Error("URL not working")
