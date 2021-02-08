@@ -2,16 +2,55 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'poppins';
+    color: white;
+}
+
+body {
+    background-color: #222222;
+    overflow-x: hidden;
+}
+
+header nav {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a{
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+header nav input {
+    height: 2rem;
 }
 
 header label {
     display: none;
 }
 
+header section {
+    width: 100vw;
+    height: 6vh;
+    background-color: #333333;
+}
+
+header section button {
+    background-color: #333333;
+    border: none;
+    line-height: 6vh;
+    margin-left: 3rem;
+}
+
+header section button:hover {
+    cursor: pointer;
+}
+
 #movie-template {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    margin: auto;
 }
 
 .movie-title {
@@ -22,8 +61,13 @@ header label {
 }
 
 .movie {
-    border: 1px solid red;
-    margin: 0 1rem;
+    margin: 1rem;
+    transition: ease-in 0.2s;
+}
+
+.movie:hover {
+    transform: scale(1.1,1.1);
+    cursor: pointer;
 }
 
 img {
