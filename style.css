@@ -2,14 +2,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
 }
 
-body {
-    background-color: black;
+header label {
+    display: none;
 }
 
-#app{
-    background-color: aqua;
-    color: black;
+#movie-template {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.movie-title {
+    white-space: nowrap;
+    width: 14rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movie {
+    border: 1px solid red;
+    margin: 0 1rem;
+}
+
+img {
+    width: 14rem;
 }

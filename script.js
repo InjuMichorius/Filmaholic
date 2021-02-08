@@ -1,3 +1,5 @@
+const movieContainer = document.getElementById('movie-template');
+
 function fetchData() {
     fetch("https://api.themoviedb.org/3/movie/popular?api_key=6b14c4c8bcc5ae16e8216d9385a1b3a9")
         .then(response => {
@@ -8,18 +10,18 @@ function fetchData() {
         })
         .then(movies => {
             console.log(movies);
-            const html = movies.results.map(naam => {
+            const html = movies.results.map(movie => {
                 return `
-                <div class="movie">
-                    <p>Title: ${naam.title}</p>
-                    <p>Realease Date: ${naam.release_date}</p>
-                    <p>Rating: ${naam.vote_average}</p>
-                    <p>Overview: ${naam.overview}</p>
-                </div>`
+                <article class="movie">
+                    <img src="./images/filler-image.jfif" alt="Cover of ${movie.title}">
+                    <p class="movie-title">${movie.title}</p>
+                    <p>${movie.release_date}</p>
+                    <p>${movie.vote_average}</p>
+                </article>`
             })
-            .join('')
+                .join('')
 
-            document.querySelector('#app').insertAdjacentHTML("afterbegin", html)
+            movieContainer.insertAdjacentHTML("afterbegin", html)
 
         })
         .catch(error => {
