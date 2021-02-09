@@ -2,6 +2,24 @@
 ![](https://github.com/InjuMichorius/Filmaholic/blob/master/images/README%20images/READMECOVER.JPG)
 Filmaholic is a movie rating application that rates the suitability of movies to its audience using an API. Click [here](https://injumichorius.github.io/Filmaholic/) for the live demo
 
+## Goal
+The goal of the application is...
+
+## Actor and Interaction Diagram
+Actor diagram
+
+## API
+Which API is used and what are the limitations?
+
+## Interaction diagram
+Interaction diagram
+
+## Design patterns and Best Practices
+filler
+
+## Feature wishlist / backlog
+What would you like to add?
+
 ## Getting started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
