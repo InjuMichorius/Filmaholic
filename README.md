@@ -20,4 +20,4 @@ git clone https://github.com/InjuMichorius/Filmaholic.git
 To test if the application works you can open the index.html file. If you see the movie covers it works!
 
 ## License
-This project is licensed under the MIT license. See the LICENSE.md file for details
+This project is licensed under the MIT license. See the [LISENCE.md](https://github.com/InjuMichorius/Filmaholic/blob/master/LICENSE) file for details
