@@ -46,7 +46,11 @@ __Code standards are important__ when working on any project; your code stays *c
 * Indentation is always __clear__
 
 ## Feature wishlist / backlog
-What would you like to add?
+* A register/login page
+* A way for users to interact
+* A way to rate a movie and update this on the application
+* A small trailer of the movie
+* Reviews
 
 ## Getting started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
