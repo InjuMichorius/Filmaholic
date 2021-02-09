@@ -8,14 +8,14 @@ Filmaholic is a movie rating application that rates the suitability of movies to
 ## Goal
 The goal of the application is...
 
-## Actor and Interaction Diagram
-Actor diagram
+## Actor Diagram
+![Image of Actor Diagram](https://github.com/InjuMichorius/Filmaholic/blob/master/images/README%20images/actorDiagram.jpg)
 
 ## API
 Which API is used and what are the limitations?
 
-## Interaction diagram
-Interaction diagram
+## Interaction Diagram
+![Image of Interaction Diagram](https://github.com/InjuMichorius/Filmaholic/blob/master/images/README%20images/interactionDiagram.jpg)
 
 ## Design patterns and Best Practices
 list...
