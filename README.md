@@ -6,7 +6,7 @@ Filmaholic is a movie rating application that rates the suitability of movies to
 [Click here for the live demo](https://injumichorius.github.io/Filmaholic/)
 
 ## Goal
-The goal of the application is...
+The goal of Filmaholic is to provide its audience with information about movies, so they can make a decision on what to watch. They can also search a movie to see other people's opinions. This application will show the overall rating of any movie using the The Movie DataBase API.
 
 ## Actor Diagram
 ![Image of Actor Diagram](https://github.com/InjuMichorius/Filmaholic/blob/master/images/README%20images/actorDiagram.jpg)
