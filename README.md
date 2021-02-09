@@ -18,7 +18,32 @@ Which API is used and what are the limitations?
 ![Image of Interaction Diagram](https://github.com/InjuMichorius/Filmaholic/blob/master/images/README%20images/interactionDiagram.jpg)
 
 ## Design patterns and Best Practices
-list...
+__Code standards are important__ when working on any project; your code stays *consistent* and is *readable* for everyone. I defined code standards for __HTML__, __CSS__ and __JS__ while working on this project.
+
+### Javascript code standards
+* Variables & functions are written in __camelCase__
+* Promises are handled with __async functions__ using await
+* I don't use var, only __const__ or __let__
+* I put __spaces around operators__ ( = + - * / ) and after commas (exception for for loops)
+* I use indentation with __TAB__
+* I always end a statement with a __semi-colon;__
+* Functions have their opening bracket on the __same line__ as the name, with 1 space in between
+* I use __ES6 syntax__ where possible
+
+### CSS code standards
+* I try to avoid __!important__ as much as possible
+* Layout/general styling is always __above__ more specific styling
+* Selectors are not unnecessary __long__ nor __short__
+* I use __CSS3 syntax__ where possible
+* I avoid old display properties like float
+* CSS Selectors must have a __space__ between the name and bracket
+
+### HTML code standards
+* I only use IDs when the element is present __once__ on a page and it's necessary for styling or Javascript
+* I always write semantic HTML according to __W3C Validator__
+* Divs are only used when __necessary__ for styling purposes
+* Classes allow easy __re-usage__
+* Indentation is always __clear__
 
 ## Feature wishlist / backlog
 What would you like to add?
