@@ -1,3 +1,5 @@
+//import { routie } from './libraries/routie'
+
 const movieContainer = document.getElementById('movie-template');
 
 function fetchData() {
@@ -9,11 +11,11 @@ function fetchData() {
             return response.json();
         })
         .then(movies => {
-            console.log(movies);
+            console.log(movies.results[0].poster_path);
             const html = movies.results.map(movie => {
                 return `
                 <article class="movie">
-                    <img src="./images/filler-image.jfif" alt="Cover of ${movie.title}">
+                    <img src="https://image.tmdb.org/t/p/w200/${movie.poster_path}" alt="Cover of ${movie.title}">
                     <p class="movie-title">${movie.title}</p>
                     <p>${movie.release_date}</p>
                     <p>${movie.vote_average}</p>
@@ -30,3 +32,15 @@ function fetchData() {
 }
 
 fetchData()
+
+//Create movie detail page
+
+// function movieDetails() {
+//     console.log('TEST')
+// }
+
+// function router() {
+//     routie('test', movieDetails)
+// }
+
+// router()
