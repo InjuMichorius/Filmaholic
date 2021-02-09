@@ -1,5 +1,5 @@
 # Filmaholic
-![]()
+![](https://github.com/InjuMichorius/Filmaholic/blob/master/images/README%20images/READMECOVER.JPG)
 
 
 Cherish is a register/login feature for an online dating app. The code is mainly focused on progressive enhancement and frontend development.
