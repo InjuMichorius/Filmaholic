@@ -1,5 +1,3 @@
-//import { routie } from './libraries/routie'
-
 const movieContainer = document.getElementById('movie-template');
 
 function fetchData() {
@@ -11,7 +9,7 @@ function fetchData() {
             return response.json();
         })
         .then(movies => {
-            console.log(movies.results[0].poster_path);
+            console.log(movies);
             const html = movies.results.map(movie => {
                 return `
                 <article class="movie">
@@ -19,6 +17,7 @@ function fetchData() {
                     <p class="movie-title">${movie.title}</p>
                     <p>${movie.release_date}</p>
                     <p>${movie.vote_average}</p>
+                    <a href="#${movie.id}">click me</a>
                 </article>`
             })
                 .join('')
@@ -34,13 +33,10 @@ function fetchData() {
 fetchData()
 
 //Create movie detail page
+function router() {
+    routie(':id', function (id) {
+        console.log(id)
+    });
+};
 
-// function movieDetails() {
-//     console.log('TEST')
-// }
-
-// function router() {
-//     routie('test', movieDetails)
-// }
-
-// router()
+router()
