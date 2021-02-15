@@ -1,6 +1,6 @@
-import { routie } from './router.js'
+import { router } from './router.js'
 
-routie()
+router()
 
 // const movieContainer = document.getElementById('movie-template');
 

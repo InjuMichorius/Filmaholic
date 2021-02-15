@@ -24,7 +24,6 @@ header nav {
 }
 
 header nav a{
-    text-decoration: none;
     font-size: 3rem;
 }
 
@@ -81,6 +80,10 @@ header section button:hover {
 
 img {
     width: 14rem;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* width */

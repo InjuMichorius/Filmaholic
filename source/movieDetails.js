@@ -1,5 +1,5 @@
 import { fetchData } from './api.js'
-export async function movieOverview() {
+export async function movieDetails() {
     const json = await fetchData();
     const movies = json.results
     console.log(movies);
@@ -8,12 +8,8 @@ export async function movieOverview() {
     const html = movies.map(movie => {
     return `
     <article class="movie">
-    <a href="#${movie.id}">
-    <img src="https://image.tmdb.org/t/p/w200/${movie.poster_path}" alt="Cover of ${movie.title}">
-    <p class="movie-title">${movie.title}</p>
-    <p>${movie.release_date}</p>
-    <p>${movie.vote_average}</p>
-    </a>
+    <h1>Detailpage almost works</h1>
+    <a href="#${movie.id}"></a>
     </article>`
     })
         .join('')
