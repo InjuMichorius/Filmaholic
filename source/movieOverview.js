@@ -2,7 +2,6 @@ import { fetchData } from './api.js'
 export async function movieOverview() {
     const json = await fetchData('popular');
     const movies = json.results
-    console.log(movies);
     const movieContainer = document.getElementById('movie-template');
     movieContainer.innerHTML = '';
     const html = movies.map(movie => {
