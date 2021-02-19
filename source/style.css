@@ -6,14 +6,21 @@
     color: white;
 }
 
+:root {
+    --primary: #222;
+    --secondary: #333;
+    --accent: #FF0037;
+}
+
 body {
-    background-color: #222222;
+    background-color: var(--primary);
     overflow-x: hidden;
+    cursor: url('../images/cursor.png'), auto;
 }
 
 ::selection {
     color: black;
-    background-color: #FF0037;
+    background-color: var(--accent);
 }
 
 header nav {
@@ -41,11 +48,11 @@ header label {
 header section {
     width: 100vw;
     height: 6vh;
-    background-color: #333333;
+    background-color: var(--secondary);
 }
 
 header section button {
-    background-color: #333333;
+    background-color: var(--secondary);
     border: none;
     line-height: 6vh;
     margin-left: 3rem;
@@ -115,14 +122,14 @@ a {
 
 .movieDetails {
     margin: 3rem;
-    background-color: #333333;
+    background-color: var(--secondary);
 }
 
 .movieDetails span{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
-    color: #222;
+    color: var(--primary);
     text-transform: uppercase;
 }
 
