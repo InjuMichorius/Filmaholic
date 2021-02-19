@@ -12,7 +12,8 @@ The goal of Filmaholic is to provide its audience with information about movies,
 ![Image of Actor Diagram](https://github.com/InjuMichorius/Filmaholic/blob/master/images/README%20images/actorDiagram.jpg)
 
 ## API
-Which API is used and what are the limitations?
+I made use of [The Movie DB API](https://www.themoviedb.org/) for this project.
+The base enpoint is https://api.themoviedb.org/. All endpoints return either a JSON object or array.
 
 ## Interaction Diagram
 ![Image of Interaction Diagram](https://github.com/InjuMichorius/Filmaholic/blob/master/images/README%20images/interactionDiagram.jpg)
