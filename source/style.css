@@ -53,6 +53,7 @@ header label {
 header section {
     width: 100vw;
     height: 6vh;
+    padding: 0 3rem;
     background-color: var(--secondary);
 }
 
@@ -60,7 +61,43 @@ header section button {
     background-color: var(--secondary);
     border: none;
     line-height: 6vh;
-    margin-left: 3rem;
+    width: 5rem;
+}
+
+.dropbtn {
+    background-color: var(--secondary);
+    border: none;
+    line-height: 6vh;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--secondary);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content button {
+    padding: 1rem;
+    width: 160px;
+}
+
+.dropdown-content button:hover {
+    background-color: var(--primary);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: var(--primary);
 }
 
 header section button:hover {
@@ -172,11 +209,13 @@ a {
 }
 
 /*Hides anything, used for toggle*/
+
 .hide {
     display: none;
 }
 
 /*loader from https://loading.io/css/*/
+
 #lds-spinner {
     margin: 30vh auto;
     width: 80px;
