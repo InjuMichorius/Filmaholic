@@ -1,7 +1,7 @@
 import { fetchData } from './api.js'
+
 export async function movieDetails(id) {
     const json = await fetchData(id);
-    console.log(id);
     const movie = json
     const movieContainer = document.getElementById('movie-template');
     movieContainer.innerHTML = '';
