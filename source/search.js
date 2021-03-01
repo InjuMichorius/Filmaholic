@@ -5,19 +5,16 @@ const input = document.getElementById('find-movies');
 input.addEventListener('input', search);
 
 export async function search(event) {
-    
+
     const json = await fetchData('popular');
     const movies = json.results
+    const movieContainer = document.getElementById('movie-template');
     const html = movies.map(movie => {
-        return `${movie.title}`
+        let searchInput = event.target.value;
+
+        if (searchInput == movie.title) {
+            console.log(movie)
+        }
+
     });
-
-    console.log(html)
-
-
-    let searchInput = event.target.value;
-    console.log(searchInput);
-
-
-
 };
