@@ -1,8 +1,10 @@
 import { fetchData } from './api.js'
-const loader = document.querySelector('lds-spinner')
 
-export async function movieOverview() {
+const alphabetical = document.querySelector('.sort');
 
+alphabetical.addEventListener('click', sort);
+
+export async function sort() {
     const json = await fetchData('popular');
     const movies = json.results
     const movieContainer = document.getElementById('movie-template');
@@ -19,7 +21,5 @@ export async function movieOverview() {
     </article>`
     }).join('')
 
-    loader.classList.toggle('hide');
-
     movieContainer.insertAdjacentHTML("afterbegin", html)
-}
+};
