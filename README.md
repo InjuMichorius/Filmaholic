@@ -9,7 +9,7 @@ Filmaholic is a movie rating application that rates the suitability of movies to
 The goal of Filmaholic is to provide its audience with information about movies, so they can make a decision on what to watch. They can also search a movie to see other people's opinions. This application will show the overall rating of any movie using the The Movie DataBase API.
 
 ## Actor Diagram
-![Image of Actor Diagram](https://github.com/InjuMichorius/Filmaholic/blob/master/images/README%20images/actorDiagramREADME.jpg)
+![Image of Actor Diagram](https://github.com/InjuMichorius/Filmaholic/blob/master/images/README%20images/actorDiagram.jpg)
 
 ## API
 I made use of [The Movie DB API](https://www.themoviedb.org/) for this project.
@@ -41,7 +41,7 @@ The api url needs 3 things.
 The returning array will contain result[0] up to result[20]. The result is the movie array I made above.
 
 ## Interaction Diagram
-![Image of Interaction Diagram](https://github.com/InjuMichorius/Filmaholic/blob/master/images/README%20images/interactionDiagramREADME.jpg)
+![Image of Interaction Diagram](https://github.com/InjuMichorius/Filmaholic/blob/master/images/README%20images/interactionDiagram.jpg)
 
 ## Design patterns and Best Practices
 __Code standards are important__ when working on any project; your code stays *consistent* and is *readable* for everyone. I defined code standards for __HTML__, __CSS__ and __JS__ while working on this project.
