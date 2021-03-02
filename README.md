@@ -33,6 +33,13 @@ The base enpoint is https://api.themoviedb.org/. All endpoints return either a J
 }
 ```
 
+The api url needs 3 things.
+* The base URL (https://api.themoviedb.org/)
+* The endpoint (popular)
+* The API key (?api_key=0a00a0a0aaa0aa00a0000a0000a0a0a0)
+
+The returning array will contain result[0] up to result[20]. The result is the movie array I made above.
+
 ## Interaction Diagram
 ![Image of Interaction Diagram](https://github.com/InjuMichorius/Filmaholic/blob/master/images/README%20images/interactionDiagramREADME.jpg)
 
