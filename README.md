@@ -13,7 +13,7 @@ The goal of Filmaholic is to provide its audience with information about movies,
 
 ## API
 I made use of [The Movie DB API](https://www.themoviedb.org/) for this project.
-The base enpoint is https://api.themoviedb.org/. All endpoints return either a JSON object or an array. The endpoints I use are popular and ID. This is the structure of a movie array:
+The base endpoint is https://api.themoviedb.org/. All endpoints return either a JSON object or an array. The endpoints I use are popular and ID. This is the structure of a movie array:
 
 ```json
 {
