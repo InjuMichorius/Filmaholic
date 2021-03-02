@@ -4,6 +4,7 @@ const input = document.getElementById('find-movies');
 
 input.addEventListener('keyup', search);
 
+//Create function that searches through movies on keypress in the search input
 export async function search(event) {
     const json = await fetchData('popular');
     const movies = json.results

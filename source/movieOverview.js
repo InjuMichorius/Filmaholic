@@ -17,7 +17,7 @@ releaseDate.addEventListener('click', () => {
     movieOverview('date')
 });
 
-//create movieoverview based on sorting (none by default)
+//create function to render all popular movies. These will be rendered based on sorting (none by default).
 export async function movieOverview(sorting) {
     const json = await fetchData('popular');
     const movies = json.results

@@ -1,6 +1,8 @@
 import { fetchData } from './api.js'
+
 const loader = document.getElementById('lds-spinner')
 
+//Create a function to render a specific movie.
 export async function movieDetails(id) {
     const json = await fetchData(id);
     const movie = json
