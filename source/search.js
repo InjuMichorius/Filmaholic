@@ -1,5 +1,5 @@
 import { fetchData } from './api.js'
-
+const loader = document.getElementById('lds-spinner')
 const input = document.getElementById('find-movies');
 
 input.addEventListener('keyup', search);
@@ -17,7 +17,7 @@ export async function search(event) {
         const movieContainer = document.getElementById('movie-template');
         movieContainer.innerHTML = '';
         const html = filteredMovies.map(movie => {
-        return `
+            return `
         <article class="movie">
         <a href="#${movie.id}">
         <img src="https://image.tmdb.org/t/p/w200/${movie.poster_path}" alt="Cover of ${movie.title}">
@@ -27,35 +27,15 @@ export async function search(event) {
         </a>
         </article>`
         }).join('')
-    
+
+        // loader.classList.toggle('hide');
+        const loader = document.getElementById('lds-spinner')
+        loader.style.display = "none";
+
         movieContainer.insertAdjacentHTML("afterbegin", html)
-        
+
 
     }));
 
 
 };
-
-// import { fetchData } from './api.js'
-
-// const input = document.getElementById('find-movies');
-
-// input.addEventListener('input', search);
-
-// export async function search(event) {
-
-//     const json = await fetchData('popular');
-//     const movies = json.results
-//     const movieContainer = document.getElementById('movie-template');
-//     const html = movies.map(movie => {
-//         let searchInput = event.target.value;
-
-//         if (searchInput == movie.title) {
-//             console.log(movie)
-
-//             movieContainer.innerHTML = '';
-
-//         }
-
-//     });
-// };

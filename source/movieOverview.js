@@ -1,24 +1,23 @@
 import { fetchData } from './api.js'
 const loader = document.getElementById('lds-spinner')
 
+//sorting options
 const alphabetical = document.querySelector('.alphabetical');
-
 alphabetical.addEventListener('click', () => {
     movieOverview('Alpha')
 });
 
 const voteAverage = document.querySelector('.vote-average');
-
 voteAverage.addEventListener('click', () => {
     movieOverview('vote')
 });
 
 const releaseDate = document.querySelector('.release-date');
-
 releaseDate.addEventListener('click', () => {
     movieOverview('date')
 });
 
+//create movieoverview based on sorting (none by default)
 export async function movieOverview(sorting) {
     const json = await fetchData('popular');
     const movies = json.results
@@ -77,6 +76,8 @@ export async function movieOverview(sorting) {
     }).join('')
 
     // loader.classList.toggle('hide');
+    const loader = document.getElementById('lds-spinner')
+    loader.style.display = "none";
 
     movieContainer.insertAdjacentHTML("afterbegin", html)
 }

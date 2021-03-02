@@ -1,4 +1,5 @@
 import { fetchData } from './api.js'
+const loader = document.getElementById('lds-spinner')
 
 export async function movieDetails(id) {
     const json = await fetchData(id);
@@ -36,5 +37,10 @@ export async function movieDetails(id) {
         </div>
         </article>
     </div>`
+
+    // loader.classList.toggle('hide');
+    const loader = document.getElementById('lds-spinner')
+    loader.style.display = "none";
+
     movieContainer.insertAdjacentHTML("afterbegin", html)
 }
